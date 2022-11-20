@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+
+<h1> AGENTS </h1>
+
+{% for user in user_list %}
+
+<div class="tour-entry">
+
+    <h2> <a href = " {% url 'employees_details' user.pk %} ">{{user.pk}}</a> </h2>
+
+</div>
+
+{% endfor %}
+
+
+{% endblock content %}

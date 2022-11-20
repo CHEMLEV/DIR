@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+
+<h1> TOURS </h1>
+
+{% for tour in tour_list %}
+
+<div class="tour-entry">
+
+    <h2> <a href = " {% url 'tour_details' tour.pk %} ">{{tour.title}}</a> </h2>
+
+</div>
+
+{% endfor %}
+
+
+{% endblock content %}

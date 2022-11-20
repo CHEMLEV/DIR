@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="tour-entry">
+
+    <h1> <a href="{% url 'tours' %}">TOURS </a> </h1>
+    <h1> Tour info: </h1>
+    <h2>Title: {{ tour.title }}</h2>
+    <p>Destination: {{ tour.destination }}</p>
+    <p>Duration: {{ tour.duration }} days</p>
+    <p>Price: ${{ tour.price }}</p> 
+
+
+  </div>
+
+{% endblock content %}

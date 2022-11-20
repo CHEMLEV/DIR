@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+
+<h1> AGENTS </h1>
+
+{% for agent in agent_list %}
+
+<div class="tour-entry">
+
+    <h2> <a href = " {% url 'agent_details' agent.pk %} ">{{agent.name_last_name}}</a> </h2>
+
+</div>
+
+{% endfor %}
+
+
+{% endblock content %}
